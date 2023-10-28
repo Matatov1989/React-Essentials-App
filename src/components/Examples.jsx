@@ -15,7 +15,7 @@ export default function Examples() {
     let tabContent = <p>Please select a topic.</p>;
     if (selectedTopic) {
         tabContent = (
-            <div id='tab-content'>
+            <div id="tab-content">
                 <h3>{EXAMPLES[selectedTopic].title}</h3>
                 <p>{EXAMPLES[selectedTopic].description}</p>
                 <pre>
@@ -28,7 +28,6 @@ export default function Examples() {
     return (
         <Section title="Examples" id="examples">
             <Tabs 
-                ButtonsContainer="menu"
                 buttons={
                     <>
                     <TabButton isSelected={selectedTopic === 'components'} onClick={() => handleClick('components')}>Components</TabButton>
